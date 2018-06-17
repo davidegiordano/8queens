@@ -157,5 +157,9 @@ eightQueens.printChessboard()
 print()
 print("After")
 
-#This found only a solution
-eightQueens.foundSolution()
+#This may find the same solutions
+for i in range(92):
+    print("Solution " + str(i))
+    eightQueens.foundSolution()
+    eightQueens.moveQueenAtColumn(0)
+
